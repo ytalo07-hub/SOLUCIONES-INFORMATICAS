@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Servicios Integrales Galarza</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #f7f9fc, #dce1e7);
+      color: #333;
+    }
+    header {
+      background-color: #0a3d62;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+    }
+    nav {
+      background-color: #1e3799;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+      font-weight: 600;
+    }
+    nav a:hover {
+      background-color: #3c6382;
+    }
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    .servicios, .beneficios {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: space-between;
+    }
+    .card {
+      background-color: white;
+      flex: 1 1 30%;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .card i {
+      font-size: 2.5rem;
+      color: #0a3d62;
+      margin-bottom: 1rem;
+    }
+    .card h3 {
+      margin-bottom: 0.5rem;
+    }
+    .contacto, footer {
+      background-color: #f1f2f6;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    footer {
+      background-color: #2f3640;
+      color: white;
+    }
+    .btn {
+      background-color: #1e90ff;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    img.banner {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-bottom: 5px solid #0a3d62;
+    }
+    @media (max-width: 768px) {
+      .servicios, .beneficios {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Servicios Integrales Galarza</h1>
+  <p>Confianza, orden y limpieza para su propiedad</p>
+  <p><em>Conserjería, limpieza profesional y administración eficiente</em></p>
+</header>
+
+<nav>
+  <a href="#servicios">Servicios</a>
+  <a href="#beneficios">Beneficios</a>
+  <a href="#nosotros">Sobre Nosotros</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<img src="https://images.pexels.com/photos/4254161/pexels-photo-4254161.jpeg" alt="Equipo de limpieza" class="banner">
+
+<section id="servicios">
+  <h2 style="text-align:center;">Nuestros Servicios</h2>
+  <div class="servicios">
+    <div class="card">
+      <i class="fas fa-user-shield"></i>
+      <h3>Conserjería Profesional</h3>
+      <p>Control de accesos, atención al visitante, recepción de paquetería y vigilancia pasiva.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-broom"></i>
+      <h3>Limpieza de Edificios</h3>
+      <p>Limpieza profunda de áreas comunes, oficinas, escaleras y zonas exteriores con personal capacitado.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-building"></i>
+      <h3>Administración de Propiedades</h3>
+      <p>Gestión de pagos, cobranza, mantenimiento preventivo, asambleas y reportes financieros mensuales.</p>
+    </div>
+  </div>
+</section>
+
+<section id="beneficios">
+  <h2 style="text-align:center;">¿Por qué elegirnos?</h2>
+  <div class="beneficios">
+    <div class="card">
+      <i class="fas fa-user-check"></i>
+      <h3>Personal Capacitado</h3>
+      <p>Todo nuestro equipo cuenta con experiencia y uniforme reglamentario.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-clock"></i>
+      <h3>Atención oportuna</h3>
+      <p>Supervisión constante y respuesta rápida ante requerimientos.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-thumbs-up"></i>
+      <h3>Servicio Garantizado</h3>
+      <p>Resultados visibles, limpieza constante y trato directo con propietarios.</p>
+    </div>
+  </div>
+</section>
+
+<section id="nosotros">
+  <h2 style="text-align:center;">Sobre Nosotros</h2>
+  <p style="max-width:800px;margin:auto;text-align:center;">Somos una empresa peruana dedicada a la administración integral de edificios, servicios de limpieza profesional y conserjería. Nos enfocamos en la satisfacción de nuestros clientes, brindando confianza, eficiencia y responsabilidad en cada servicio que ofrecemos.</p>
+</section>
+
+<section id="contacto" class="contacto">
+  <h2>Contacto</h2>
+  <p>Solicite su presupuesto sin compromiso</p>
+  <p><strong>📱 WhatsApp: 958 999 391</strong></p>
+  <p><strong>📧 Correo: galarzaytalo2025@gmail.com</strong></p>
+  <a class="btn" href="https://wa.me/51958999391" target="_blank">📲 Contáctanos por WhatsApp</a>
+</section>
+
+<footer>
+  <p>San Isidro, Lima - Servicios Integrales Galarza © 2025</p>
+</footer>
+
+</body>
+</html>
