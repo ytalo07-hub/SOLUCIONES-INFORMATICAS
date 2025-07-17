@@ -107,9 +107,14 @@
 <div class="container">
   <section>
     <h2>Hazme tu pregunta</h2>
-    <form id="formulario">
-      <input type="text" id="nombre" placeholder="Tu nombre" required />
-      <textarea id="pregunta" rows="5" placeholder="Escribe tu pregunta aquí..." required></textarea>
+    <form action="https://formsubmit.co/galarzaytalo2025@gmail.com" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required />
+      <textarea name="pregunta" rows="5" placeholder="Escribe tu pregunta aquí..." required></textarea>
+
+      <!-- Redirección automática al finalizar -->
+      <input type="hidden" name="_next" value="https://[TU_USUARIO].github.io/[TU_REPOSITORIO]/gracias.html">
+      <input type="hidden" name="_captcha" value="false">
+
       <button type="submit">Enviar Pregunta</button>
     </form>
   </section>
@@ -133,15 +138,7 @@
   © 2025 TORRAX Administración de Edificios | San Isidro - Lima
 </footer>
 
-<script>
-  const formulario = document.getElementById('formulario');
-  formulario.addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert("Gracias por tu pregunta. Muy pronto la responderé desde el blog.");
-    formulario.reset();
-  });
-</script>
-
 </body>
 </html>
-“Actualización del blog con diseño profesional e imágenes reales”
+
+
